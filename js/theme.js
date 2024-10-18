@@ -35,7 +35,7 @@ document.getElementById('copiarConteudo').addEventListener('click', function () 
 
   const item = new ClipboardItem({ "text/html": blob });
   navigator.clipboard.write([item]).then(function () {
-    alert('Conteúdo copiado com sucesso!');
+    alert('Assinatura copiada com sucesso! Agora cole no seu Outlook');
   }).catch(function (error) {
     console.error('Erro ao copiar o conteúdo: ', error);
   });
